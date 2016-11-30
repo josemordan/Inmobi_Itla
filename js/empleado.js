@@ -12,10 +12,10 @@ function inicio(){
 		$("#buscar").val("");
 	});
 	$("#btnactualizar").click(actualizar);
-	$("#form-create-empleado").submit(function (event){
+	$("#form").submit(function (event){
 
 		event.preventDefault();
-		var formData = new FormData($("#form_anuncio")[0]);
+		var formData = new FormData($("#form")[0]);
 		$.ajax({
 			url:$("form").attr("action"),
 			type:$("form").attr("method"),
